@@ -1,6 +1,7 @@
 import sqlite3
 
 def get_user(user_id):
+    print("Fetching user", user_id)
     conn = sqlite3.connect("users.db")
     cursor = conn.cursor()
 
